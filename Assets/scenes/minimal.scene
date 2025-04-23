@@ -1,0 +1,2066 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "1aa40300-15b4-40af-8f14-3eeae6a1635e",
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "0baa45bc-da63-4e09-a5be-9fb5cd3f56f8",
+          "Author": null,
+          "Changes": "",
+          "Description": "",
+          "Group": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SceneTags": "",
+          "Title": "minimal",
+          "Version": null
+        }
+      ]
+    },
+    {
+      "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Tags": "light,light_directional",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.94419,0.97767,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0.2532,0.32006,0.35349,1"
+        }
+      ]
+    },
+    {
+      "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": false,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "f3e304db-baab-4c1a-a4ec-8442585c2d62",
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "MultiBounce": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Projection": "Sphere",
+          "RenderDynamically": false,
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ]
+    },
+    {
+      "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "1328.699,-354.3328,123.2332",
+      "Rotation": "0.00000001005849,0.000000005094172,0.4518146,0.8921119",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "d73ef723-c888-41d4-802e-f797c79318be",
+          "BloomColor": {
+            "blend": "Linear",
+            "color": [
+              {
+                "t": 0,
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "Mode": "Additive",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Strength": 0.5,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0.5
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
+          "__version": 1,
+          "AutoExposureEnabled": false,
+          "ExposureBias": 2,
+          "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
+          "MaximumExposure": 2,
+          "MinimumExposure": 1,
+          "Mode": "Legacy",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Rate": 1
+        },
+        {
+          "__type": "Sandbox.Sharpen",
+          "__guid": "0bffee5e-19f2-41c4-88f9-faefbcce6bf4",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Scale": 0.2
+        }
+      ]
+    },
+    {
+      "__guid": "1e59e58d-4085-4a26-a8e1-a1d12791a223",
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "5402.739,8558.812,2260.265",
+      "Rotation": "0,0,0.258819,0.9659258",
+      "Scale": "25.24615,25.24615,25.24615",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "589a7b75-78e8-47c2-bc52-8d3955dfc7d0",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "c7ec122f-312b-4e2d-9788-4646fd27fddd",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "904a840e-2c8a-4cbe-bc5c-986af4539057",
+      "Flags": 0,
+      "Name": "Cube (6)",
+      "Position": "5314.954,11195.86,1097.255",
+      "Rotation": "-0.3794095,0.0499502,0.1205905,0.9159757",
+      "Scale": "25.24615,25.24615,25.24615",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "71b77853-5bbe-42b0-8f95-b79af7f0c870",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "f8f5c3f6-d396-4bb4-a468-e48cea774118",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "4bbae72c-3864-4ec8-94f0-154ae117b697",
+      "Flags": 0,
+      "Name": "Cube (1)",
+      "Position": "2893.501,9321.304,1097.256",
+      "Rotation": "-0.3888735,-0.4147297,-0.08527029,0.8182334",
+      "Scale": "25.24615,25.24615,25.24615",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "e8c3e431-4319-420a-a93e-b2c666a30568",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "ca8bd35a-31bf-48dd-ab7c-823a371ea5eb",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "a9c4b8ef-5d86-4de9-b316-3d0e34587cc0",
+      "Flags": 0,
+      "Name": "Cube (2)",
+      "Position": "4588.198,6124.792,1097.256",
+      "Rotation": "-0.1294095,-0.5536032,0.3352704,0.751246",
+      "Scale": "13.19663,13.19663,13.19663",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "3a4f607e-c5fc-4b65-a73f-8d3f9b64991d",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "636b16db-ffd4-4ed3-b914-eda3a2b88eee",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "1ea9708d-60fc-4995-9972-defe4399a0e7",
+      "Flags": 0,
+      "Name": "Cube (3)",
+      "Position": "3928.697,6532.151,1097.256",
+      "Rotation": "0.2343448,-0.5179824,0.7233174,0.3919039",
+      "Scale": "23.07544,23.07544,23.07544",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "772c1ae9-701a-48f3-b911-2d70f11714b8",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "1d699f4c-f462-4101-9416-cf340c973c85",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "13945d53-60b2-4809-8836-5c551fe701d3",
+      "Flags": 0,
+      "Name": "Terrain",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Terrain",
+          "__guid": "da72080a-b943-4744-8f28-b9aeaee41945",
+          "__version": 1,
+          "ClipMapLodExtentTexels": 256,
+          "ClipMapLodLevels": 6,
+          "EnableCollision": true,
+          "Friction": null,
+          "IsTrigger": false,
+          "MaterialOverride": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "Off",
+          "Static": true,
+          "Storage": "untitled.terrain",
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0",
+          "TerrainHeight": 10000,
+          "TerrainSize": 20000
+        },
+        {
+          "__type": "ProceduralBiomesTool.Components.TerrainBiomesComponent",
+          "__guid": "70235503-c39d-478b-9b0c-46aba32d9599",
+          "BiomeTypeMapBase64": "7NXBDcMgFAVBu/\u002BmoyhXx8YnpL8zFSDtA44DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAuvNr9yHY1/5n91HYWV//dHwDqNc3gHp\u002BA0jHN4B6fQMo0L/rtr0FDLdQX/94fgOI59e/nd8AZtI/bT2/AUykf5v\u002BcfrH6R\u002Bnf5v\u002Bcfq36d\u002Bmf5v8bfq3ef/b9G9b7W8AM\u002Bnfpn/acn4DGEn/shf19R9I/zb92/Rv079N/jb92/Rve9PfANr59R9H/zb92/Rv0z9O/zb92/Rv079N/zb92/Rv079N/jb92/Rv0x/5426a65/w/86rH3L55Isf4stH/jb94\u002BSvUx8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAefQAAAP//",
+          "DrawExtents": false,
+          "DrawTiles": false,
+          "Ecotopes": [
+            {
+              "Value": 1,
+              "Resource": "examples/ecotopes/forest.ecotope",
+              "IsValid": true
+            },
+            {
+              "Value": 2,
+              "Resource": "examples/ecotopes/grassland.ecotope",
+              "IsValid": true
+            },
+            {
+              "Value": 3,
+              "Resource": "examples/ecotopes/boulder_field.ecotope",
+              "IsValid": true
+            }
+          ],
+          "GeneratedBiomesObject": {
+            "_type": "gameobject",
+            "go": "c6f4b23f-4db7-46ac-b4e2-b8e83448eb3b",
+            "prefab": null
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Resolution": 512,
+          "Seed": 1755192844,
+          "Terrain": {
+            "_type": "component",
+            "component_id": "da72080a-b943-4744-8f28-b9aeaee41945",
+            "go": "13945d53-60b2-4809-8836-5c551fe701d3",
+            "component_type": "Terrain"
+          },
+          "Tiles": "10,10"
+        }
+      ]
+    },
+    {
+      "__guid": "c6f4b23f-4db7-46ac-b4e2-b8e83448eb3b",
+      "Flags": 0,
+      "Name": "[Generated] Terrain Biomes",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ProceduralBiomesTool.Components.TerrainBiomeGeneratedObjects",
+          "__guid": "51d64010-b49a-44d9-8491-3d5f8a0cdde0",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "TileStorageGameObjects": {
+            "65538": {
+              "_type": "gameobject",
+              "go": "5e3aa5fa-4318-4b27-9716-1b100dc062df",
+              "prefab": null
+            },
+            "32771": {
+              "_type": "gameobject",
+              "go": "16bfe4ef-3d85-476c-85a6-38df7610cc55",
+              "prefab": null
+            },
+            "65539": {
+              "_type": "gameobject",
+              "go": "aacdc2dd-467a-4b38-98b0-f834bd910444",
+              "prefab": null
+            },
+            "32772": {
+              "_type": "gameobject",
+              "go": "b8436f37-22bb-42fe-b80f-bd296ef7c2d6",
+              "prefab": null
+            },
+            "32770": {
+              "_type": "gameobject",
+              "go": "99fa3911-380b-4467-8f63-57b905300c8a",
+              "prefab": null
+            },
+            "65537": {
+              "_type": "gameobject",
+              "go": "88c25520-b362-4eb5-bdf5-6ace831da241",
+              "prefab": null
+            }
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "5e3aa5fa-4318-4b27-9716-1b100dc062df",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 4, 2",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "01d3cf16-e01b-427b-944c-221009ac496a",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_big",
+              "Position": "8719.136,4352.298,0",
+              "Rotation": "0,0,0.9533659,0.3018168",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "e06a5ec5-9635-429c-a021-0ca6098c6cc0",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f1def7c4-56a3-4b50-af9f-c88bd54f52cf",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_big (1)",
+              "Position": "9747.33,4170.688,0",
+              "Rotation": "0,0,0.1272818,0.9918666",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "98c91839-ce13-401b-89f3-ec0bfeb078f6",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "47759247-212c-470d-8d36-8438ef8f701c",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small",
+              "Position": "8931.766,4810.131,0",
+              "Rotation": "0,0,0.6188716,-0.7854921",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "401eef70-0d98-4398-b3a9-bed093e61244",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "4b9296bf-01f4-4738-9ddf-516c0c8eb3f3",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (1)",
+              "Position": "9311.464,4788.161,0",
+              "Rotation": "0,0,0.1999551,0.9798051",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "1529ce60-8e4e-4dd3-874d-560af84bdd8c",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "064cbfb0-0f27-4f3c-babe-538cccc66ee3",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (2)",
+              "Position": "9099.83,4579.33,0",
+              "Rotation": "0,0,0.5702068,-0.8215012",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "003df129-6c11-4391-8249-a2a199e970b0",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "176603be-b566-4ae6-a36e-b5f0aa3066a9",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (3)",
+              "Position": "9699.339,4683.989,0",
+              "Rotation": "0,0,0.6641259,-0.7476208",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "12624eb3-460d-428d-b867-b0498698ff38",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "dc4dff4b-45a1-44c3-80a1-aeeeba8717f2",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (4)",
+              "Position": "8734.668,4645.016,0",
+              "Rotation": "0,0,0.8522785,0.5230882",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "92830c26-52b4-42fd-b5e1-98932501273a",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "8f55836d-1393-4057-8dd8-c66ff6478143",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (5)",
+              "Position": "9123.854,4276.035,0",
+              "Rotation": "0,0,0.9773051,-0.2118366",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "e286e029-810a-4d95-a4e5-5b2183735b9b",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "3968c056-8918-40da-bc9e-b2ea05a78096",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (6)",
+              "Position": "9957.994,4748.509,0",
+              "Rotation": "0,0,0.7979208,0.6027623",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "163605d3-1767-4a08-8e92-38830309caca",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "2a36b9c3-eb56-4d9d-a326-a13f7b7c917b",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (7)",
+              "Position": "9339.231,4055.916,0",
+              "Rotation": "0,0,0.1966231,-0.9804791",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "93633cb2-b206-4bf2-85a2-f8e121084feb",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "9d1b897a-e177-4a46-8261-a6ee7697b610",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (8)",
+              "Position": "8502.779,4157.353,0",
+              "Rotation": "0,0,0.7002792,-0.7138691",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "bb1923b5-c5eb-4662-b2ae-231d25ba9362",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "2a6126d8-00d5-4efe-978b-ac3021755f8a",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (9)",
+              "Position": "8775.481,4056.552,0",
+              "Rotation": "0,0,0.854096,-0.5201154",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "9527b91f-d7dc-4593-8afd-42d3d312b8e7",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "16bfe4ef-3d85-476c-85a6-38df7610cc55",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 4, 1",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "9298a8b3-e3b1-4caf-a13a-fde32e66a44d",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_big",
+              "Position": "9130.391,3649.675,0",
+              "Rotation": "0,0,0.8007503,0.5989982",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "558b671c-dce7-4e2c-ac27-fec557611db0",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_big_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "d3e63413-e6f4-4ace-8efb-81aa20827974",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_medium",
+              "Position": "9169.562,2862.453,0",
+              "Rotation": "0,0,0.123611,-0.9923307",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "9013faa1-d4ee-4b5f-b903-baef21b55f6f",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_medium_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "103d78b6-61d7-40b6-ad67-e1726687550d",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_medium (1)",
+              "Position": "9861.453,3121.531,0",
+              "Rotation": "0,0,0.02104678,0.9997785",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "6c40afae-0162-4bc5-b7a3-7657eb45922a",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_medium_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "7311ca62-6d74-4525-86e7-2444e423daa5",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small",
+              "Position": "9529.753,3726.95,0",
+              "Rotation": "0,0,0.9661567,0.2579561",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "971b08b0-bd61-4361-ab9c-e56770fbdfb2",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "a03e615b-ca4e-4825-82f5-611a4977592d",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (1)",
+              "Position": "9517.251,3464.812,0",
+              "Rotation": "0,0,0.5531878,0.8330566",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "7b2fe032-adab-4908-8a95-e9141b6af7cd",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f34ac029-619f-4760-9a62-c1eb335ace3a",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (2)",
+              "Position": "9378.499,3156.359,0",
+              "Rotation": "0,0,0.9519352,-0.3062994",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "ae4b4852-10ef-4717-92d6-31fd37dc0e68",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "bc137558-c188-4661-a697-3df7a472cd7c",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (3)",
+              "Position": "8650.392,3691.594,0",
+              "Rotation": "0,0,0.09850414,0.9951366",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "ad79d71c-973d-4dae-ad47-ef207e59648a",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "70b8fef3-5918-4342-ac34-d5d2bcd93b41",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (4)",
+              "Position": "8980.423,3920.039,0",
+              "Rotation": "0,0,0.9886694,-0.1501095",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "2515f316-b5b8-4ea1-885d-9746512e7648",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "97091750-a19e-4364-82f3-36119cbb647c",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (5)",
+              "Position": "8771.693,3419.168,0",
+              "Rotation": "0,0,0.1104413,0.9938827",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "197d9163-5477-47c5-98e3-bcdfdc496c51",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "1c64cdcd-f4a3-459e-89fa-ab884292ba68",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (6)",
+              "Position": "9046.2,3204.751,0",
+              "Rotation": "0,0,0.9977224,-0.06745438",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "1b5e0988-8bad-4044-8f91-b15f78deb2cb",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "1d122cdf-7100-42f7-ba13-c9a68b1b6fe2",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (7)",
+              "Position": "9240.191,3895.516,0",
+              "Rotation": "0,0,0.4880731,0.8728028",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "b2e7d692-4b74-4129-b5e7-b68d92cb4f50",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "55846cef-ecc4-40bd-978a-cff13dae2577",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (8)",
+              "Position": "8664.318,2882.86,0",
+              "Rotation": "0,0,0.7850616,0.6194177",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "447478ab-248e-4e0e-9ae4-373d1fe236b4",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "ee353676-95fd-4db3-aa3f-1001908ecf30",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (9)",
+              "Position": "8791.998,3148.849,0",
+              "Rotation": "0,0,0.7450639,0.6669931",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "f55a69ce-6844-4161-ad76-887f1ea09f94",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "8084b71d-61fc-4c6b-a65d-e4ee6e00c3e8",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (10)",
+              "Position": "9590.657,2389.89,0",
+              "Rotation": "0,0,0.904977,0.4254605",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "cf6b2d06-6dee-4639-8164-02bc26364028",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "6c359989-d340-4a89-a416-9d7269b1494d",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (11)",
+              "Position": "9558.059,2935.348,0",
+              "Rotation": "0,0,0.8978251,0.4403523",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "62d6309f-2f4f-41d3-9d34-51c74921de7f",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "6078164c-38e9-4368-9206-6a5cd27da851",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (12)",
+              "Position": "9500.569,2656.393,0",
+              "Rotation": "0,0,0.7786707,0.6274329",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "5cf9d60d-6e08-466b-bf8a-9ae0e30a5535",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "dda7569b-82b0-400e-ae9d-eedc37082218",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (13)",
+              "Position": "9878.08,3797.844,0",
+              "Rotation": "0,0,0.7132813,-0.7008778",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "737fe5ee-9477-4d1e-9730-d234477e03ef",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "4d3613b6-b9ee-4229-921d-5a13289478f7",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (14)",
+              "Position": "9986.699,3468.468,0",
+              "Rotation": "0,0,0.6616859,-0.7497811",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "ba1731db-d76e-488e-b541-b3fae01217bf",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f27945c2-3914-4f89-b5f2-a1a68ee75a8f",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (15)",
+              "Position": "9775.654,2685.803,0",
+              "Rotation": "0,0,0.5943418,0.8042126",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "8dc52a2e-2a2d-49ed-8dca-481d6cbc744a",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "aacdc2dd-467a-4b38-98b0-f834bd910444",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 5, 2",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "9a676bcb-d528-46dc-8725-e8c20e863622",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small",
+              "Position": "10199.14,4712.881,0",
+              "Rotation": "0,0,0.8328944,0.5534319",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "18487eac-d83d-4658-80fb-37949ddbbcab",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "aaf8d855-09ae-458e-b2cf-9eb1b2a3c59a",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (1)",
+              "Position": "10268.51,4117.734,0",
+              "Rotation": "0,0,0.2818753,0.9594511",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "07ea651c-4bd7-481c-a53b-4aaedea2360f",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "5b97a81c-696f-4d20-9b55-6634a49ecd82",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (2)",
+              "Position": "10137.68,4411.87,0",
+              "Rotation": "0,0,0.7183781,0.6956528",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "4eb54fdc-23b8-4d63-b48d-9d5cfe538dfa",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "b8436f37-22bb-42fe-b80f-bd296ef7c2d6",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 5, 1",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "7ed496a4-e752-445e-a53d-7a71e94b54e6",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_big",
+              "Position": "10143.39,3653.895,0",
+              "Rotation": "0,0,0.999633,-0.02708835",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "49703247-2b95-42be-ba30-f5f5feaa7e93",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_big_b.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "843c1f3d-cf64-47a3-9d21-e82987a1da82",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small",
+              "Position": "10130.65,3527.475,0",
+              "Rotation": "0,0,0.6651993,-0.7466658",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "a75d2244-ad57-47bc-bf68-8786bf0d5adf",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "4a467133-e00d-4794-b24f-47b19582294d",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (1)",
+              "Position": "10051.6,3167.523,0",
+              "Rotation": "0,0,0.4772727,0.8787552",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "52f2714e-43b4-4ca6-9d11-863fc801e5e9",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "44f36e5d-a0b4-45b4-804e-b6cd14eed058",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (2)",
+              "Position": "10270.37,3755.576,0",
+              "Rotation": "0,0,0.4937592,-0.8695987",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "2532ab33-759c-42ba-b941-df81f371bdc0",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "0d007d1c-d947-40da-88a5-206482d1135f",
+              "Flags": 9,
+              "Name": "[Generated] forest_tree_oak_small (3)",
+              "Position": "10031.23,3956.332,0",
+              "Rotation": "0,0,0.3482063,-0.9374179",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.Prop",
+                  "__guid": "5693d16d-a139-4fc1-a520-a4259058a117",
+                  "BodyGroups": 18446744073709551615,
+                  "Health": 0,
+                  "IsStatic": true,
+                  "MaterialGroup": null,
+                  "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnPropBreak": null,
+                  "OnPropTakeDamage": null,
+                  "StartAsleep": false,
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "99fa3911-380b-4467-8f63-57b905300c8a",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 3, 1",
+          "Enabled": true
+        },
+        {
+          "__guid": "88c25520-b362-4eb5-bdf5-6ace831da241",
+          "Flags": 9,
+          "Name": "[Generated] Tile Storage 3, 2",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "__guid": "72fa1557-330f-4dd6-9b63-fa8df701dba5",
+      "Flags": 0,
+      "Name": "Player Controller",
+      "Position": "8192.014,3838.281,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.PlayerController",
+          "__guid": "5b342b23-0464-4888-b1e2-f81023b8633c",
+          "AccelerationTime": 0,
+          "AimStrengthBody": 1,
+          "AimStrengthEyes": 1,
+          "AimStrengthHead": 1,
+          "AltMoveButton": "run",
+          "Body": {
+            "_type": "component",
+            "component_id": "99494142-f947-4354-bcd0-f6f1cf6b0e54",
+            "go": "72fa1557-330f-4dd6-9b63-fa8df701dba5",
+            "component_type": "Rigidbody"
+          },
+          "BodyCollisionTags": null,
+          "BodyHeight": 72,
+          "BodyMass": 500,
+          "BodyRadius": 16,
+          "CameraOffset": "256,0,12",
+          "ColliderObject": {
+            "_type": "gameobject",
+            "go": "2ba01a15-b43f-46a4-afaa-e2e8d2140092",
+            "prefab": null
+          },
+          "DeaccelerationTime": 0,
+          "DuckedHeight": 36,
+          "DuckedSpeed": 70,
+          "EnableFootstepSounds": true,
+          "EnablePressing": true,
+          "EyeDistanceFromTop": 8,
+          "FootstepMixer": {
+            "Name": "unknown",
+            "Id": "00000000-0000-0000-0000-000000000000"
+          },
+          "FootstepVolume": 1,
+          "HideBodyInFirstPerson": true,
+          "JumpSpeed": 300,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "ReachLength": 130,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "db3457f0-c52d-4fac-be17-f998df255bd3",
+            "go": "5193fe82-873f-4756-bf0e-6d061674101a",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RotateWithGround": true,
+          "RotationAngleLimit": 45,
+          "RotationSpeed": 1,
+          "RunByDefault": false,
+          "RunSpeed": 320,
+          "ShowColliderComponents": false,
+          "ShowRigidbodyComponent": false,
+          "ThirdPerson": true,
+          "ToggleCameraModeButton": "view",
+          "UseAnimatorControls": true,
+          "UseButton": "use",
+          "UseCameraControls": true,
+          "UseFovFromPreferences": true,
+          "UseInputControls": true,
+          "WalkSpeed": 110
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "99494142-f947-4354-bcd0-f6f1cf6b0e54",
+          "AngularDamping": 1,
+          "Gravity": true,
+          "LinearDamping": 0.1,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,36",
+          "MassOverride": 500,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": true,
+          "RigidbodyFlags": "DisableCollisionSounds",
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.Movement.MoveModeWalk",
+          "__guid": "772b7a3b-abaf-4606-a1a9-1e6c84a9543f",
+          "GroundAngle": 45,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Priority": 0,
+          "StepDownHeight": 18,
+          "StepUpHeight": 18
+        },
+        {
+          "__type": "Sandbox.Movement.MoveModeSwim",
+          "__guid": "90bf0cf7-fc08-4f64-905f-b2bb9408921e",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Priority": 10,
+          "SwimLevel": 0.7
+        },
+        {
+          "__type": "Sandbox.Movement.MoveModeLadder",
+          "__guid": "c07ca157-1b35-4c54-8977-19ec0aef6a5a",
+          "ClimbableTags": "ladder",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Priority": 5
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "5193fe82-873f-4756-bf0e-6d061674101a",
+          "Flags": 0,
+          "Name": "Body",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "db3457f0-c52d-4fac-be17-f998df255bd3",
+              "AnimationGraph": null,
+              "BodyGroups": 341,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen/citizen.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        },
+        {
+          "__guid": "2ba01a15-b43f-46a4-afaa-e2e8d2140092",
+          "Flags": 1,
+          "Name": "Colliders",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CapsuleCollider",
+              "__guid": "07773748-5e24-4572-99e9-4c55aa5da745",
+              "End": "0,0,45.05097",
+              "Friction": 0,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Radius": 11.313708,
+              "Start": "0,0,60.68629",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "a84b3e57-b81a-4d7c-8021-7ce247071080",
+              "Center": "0,0,18",
+              "Friction": 0,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "16,16,36",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": "minimal",
+  "Description": null,
+  "__references": [
+    "facepunch.tree_oak_big_a#38050",
+    "facepunch.tree_oak_big_b#33691",
+    "facepunch.tree_oak_medium_a#33692",
+    "facepunch.tree_oak_small_a#33693"
+  ],
+  "__version": 2
+}
